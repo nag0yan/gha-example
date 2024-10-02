@@ -15,4 +15,4 @@ jobs:
     steps:
       - name: Merge pull request
         run: |
-          gh merge "${GITHUB_HEAD_REF}" --merge
+          gh pr merge "${GITHUB_HEAD_REF}" --merge
