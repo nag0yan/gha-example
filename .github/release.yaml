@@ -1,0 +1,9 @@
+changelog:
+  categories:
+    - tilte: Features
+      labels:
+        - feature
+    - title: Bug Fixes
+      labels:
+        - bug
+        - fix
