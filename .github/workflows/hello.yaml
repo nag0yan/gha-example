@@ -1,8 +1,9 @@
 name: Hello
 
 on:
-  pull_request:
-
+  push:
+    branches:
+      - hello
 jobs:
   hello:
     runs-on: ubuntu-latest
@@ -10,7 +11,3 @@ jobs:
     steps:
     - name: Hello world
       run: echo Hello, world!
-    - name: test
-      env: 
-        EVENT_NAME: ${{ github.event_name }}
-      run: echo "$EVENT_NAME"
